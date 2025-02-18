@@ -6,5 +6,4 @@
 This website fetches the movie api from https://yts.mx and shows posters and details at a glance.\
 Click on each movie to get more detailed information such as language, runtime, ratings, and more.
 
-##실행화면
-https://github.com/hyungEee/movie-website/blob/main/mvweb1.png
+![실행화면1](https://github.com/hyungEee/movie-website/blob/main/mvweb1.png)
