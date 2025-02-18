@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import MovieDetail from "../components/MovieDetail";
+import GlobalStyle from "../components/GlobalStyle";
 
 function Detail(){
     const {id}=useParams();
@@ -13,7 +14,6 @@ function Detail(){
           )
         ).json();
         setMovie(json.data.movie);
-        console.log(json.data.movie);
         setLoading(false);
     };
     useEffect(()=>{
@@ -21,11 +21,11 @@ function Detail(){
     },[]);
     return (
         <div>
+        <GlobalStyle />
         {loading?(
           <h1>Loading...</h1>
         ):(
           <div>
-            <h1>Details</h1>
             <MovieDetail 
               key={movie.id} 
               coverImg={movie.medium_cover_image}
